@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>VisAR</title>
+  <title>Vi</title>
   <meta name="description" content="Textures - A-Frame School">
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
@@ -29,14 +29,14 @@
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
     <canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
-    <a-marker camera="active:false" type="pattern" preset="hiro" visible="false" material="" arjs-anchor="" arjs-hit-testing="">
-      <a-entity id="vk" class="clickable" position="-4 0 0" rotation="-90 0 0" scale="0.6 0.6 0.6"
+    <a-marker camera="active:false" type="pattern" url="visAR-marker.patt" visible="false" material="" arjs-anchor="" arjs-hit-testing="">
+      <a-entity id="vk" class="clickable" position="-1 0 0" rotation="-90 0 0" scale="0.6 0.6 0.6"
         material="shader:portal;side:double;visible:false" event-set__click="_event: onmousedown; _target: #vk; _delay: 0; _color: #24CAFF;">
-        <a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png" width="3" height="3"></a-image>
+        <a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/2048px-VK_Compact_Logo_%282021-present%29.svg.png" width="1" height="1"></a-image>
       </a-entity>
-      <a-entity id="telegram" class="clickable" position="4 0 0" rotation="-90 0 0" scale="0.6 0.6 0.6"
+      <a-entity id="telegram" class="clickable" position="1 0 0" rotation="-90 0 0" scale="0.6 0.6 0.6"
         material="shader:portal;side:double;visible:false" event-set__click="_event: onmousedown; _target: #telegram; _delay: 0; _color: #24CAFF;">
-        <a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" width="3" height="3"></a-image>
+        <a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" width="1" height="1"></a-image>
       </a-entity>
     </a-marker>
 
